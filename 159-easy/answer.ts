@@ -1,6 +1,6 @@
 const recurringCharacter = (string:String)=>{
+    let previousChar = null;
     for (let currentChar of string) {
-        let previousChar;
         if (currentChar == previousChar) {
             return currentChar;
         }
