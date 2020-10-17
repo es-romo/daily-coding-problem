@@ -1,19 +1,22 @@
+/*
+    TODO Unfinished!! 😬
+*/
 #include <stddef.h>
 #include <stdlib.h>
 #include <stdio.h>
 
-struct Node { 
+typedef struct { 
     int data; 
-    struct Node* next; 
-};
+    Node* next; 
+} Node;
 
-struct LinkedList { 
-    struct Node* start; 
-    struct Node* end; 
-};
+typedef struct { 
+    Node* start; 
+    Node* end; 
+}  LinkedList;
 
-void insertNode(struct LinkedList *list, int data){
-    struct Node *link = (struct Node*) malloc(sizeof(struct Node));
+void insertNode(LinkedList *list, int data){
+    Node *link = ( Node*) malloc(sizeof(Node));
 
     link->data = data;
 
@@ -28,8 +31,8 @@ void insertNode(struct LinkedList *list, int data){
     }
 };
 
-void printNodes(struct LinkedList *list){
-    struct Node *ptr = list->start;
+void printNodes(LinkedList *list){
+    Node *ptr = list->start;
 
     while (ptr != NULL)
     {
@@ -41,7 +44,7 @@ void printNodes(struct LinkedList *list){
 
 int main(){
 
-    struct LinkedList *list = (struct LinkedList*) malloc(sizeof(struct LinkedList));
+    LinkedList *list = (LinkedList*) malloc(sizeof(LinkedList));
 
     insertNode(list,2);
     insertNode(list,6);
@@ -57,16 +60,38 @@ int main(){
     return 1;
 }
 
-int mergeSort(struct LinkedList *list){
-    struct LinkedList *left = (struct LinkedList*) malloc(sizeof(struct LinkedList));
-    struct LinkedList *right = (struct LinkedList*) malloc(sizeof(struct LinkedList));
+void split(LinkedList *list, LinkedList *left, LinkedList *right){
+    Node *fast = list->start;
+    Node *slow = list->start;
 
-    /*mergeSort(left);
-    mergeSort(right);*/
+    if (list->start==NULL) //if list is empty return
+        return;
+    if (list->start->next==NULL) //if list has single item return;
+        return;
+    //Crawl
+    while (fast->next != NULL)
+    {
+        fast = fast->next;
+        if (fast->next != NULL)
+        {
+            fast = fast->next; //advance fast twice
+            slow = slow->next; //advance slow once
+        }   
+    }
+}
+
+int mergeSort(struct LinkedList *list){
+    
+    LinkedList *left = NULL;
+    LinkedList *right = NULL;
+
+    split(list,left,right);
+
+    sortedMerge(left,right);    
 
     return 1;
 }
 
-void splitList(struct LinkedList *list){
-
+void sortedMerge(struct LinkedList *left,struct LinkedList *right){
+    
 }
