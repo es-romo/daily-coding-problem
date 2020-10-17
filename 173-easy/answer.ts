@@ -1,4 +1,4 @@
-let d: any = {
+let d = {
     bns: 3,
     foo: {
         a: 5,
@@ -18,7 +18,7 @@ let flatten = (dictionary: any) => {
             const jefe = flatten(dictionary[key]);
             
             for (let z in jefe) {
-                flat[key + '.' + z] = jefe[z]
+                flat[key + '.' + z] = jefe[z];
             }
 
         } else {
