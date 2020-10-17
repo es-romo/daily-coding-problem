@@ -1,4 +1,4 @@
-const recurringCharacter = (string:String)=>{
+const recurringCharacter = (string: string)=>{
     let previousChar = null;
     for (let currentChar of string) {
         if (currentChar == previousChar) {
