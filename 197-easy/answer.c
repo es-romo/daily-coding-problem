@@ -38,5 +38,5 @@ void shift(int k, int arr[],size_t size){
         else
             arr[i] = arr[target];
     }
-    
+       
 }
