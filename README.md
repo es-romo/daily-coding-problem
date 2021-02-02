@@ -2,7 +2,11 @@
 
 A repository for all my [Daily Coding Problem](https://www.dailycodingproblem.com/) anwsers. 
 
-## 159 - Easy
+✅ - Completed
+
+⚠️ - Incomplete
+
+## 159 - Easy ✅
 
 This problem was asked by Google.
 
@@ -12,7 +16,7 @@ For example, given the string "acbbac", return "b". Given the string "abcdef", r
 
 [Solution](159-easy/answer.ts)
 
-## 169 - Medium
+## 169 - Medium ⚠️
 
 This problem was asked by Google.
 
@@ -22,7 +26,7 @@ For example, the linked list `4 -> 1 -> -3 -> 99` should become `-3 -> 1 -> 4 ->
 
 [Solution](169-medium/answer.c)
 
-## 173 - Easy
+## 173 - Easy ✅
 
 This problem was asked by Stripe.
 
@@ -56,7 +60,7 @@ You can assume keys do not contain dots in them, i.e. no clobbering will occur.
 
 [Solution](173-easy/answer.ts)
 
-## 194 - Easy
+## 194 - Easy ✅
 
 This problem was asked by Facebook.
 
@@ -64,7 +68,7 @@ Suppose you are given two lists of `n` points, one list p1, p2, ..., pn on the l
 
 [Solution](194-easy/answer.ts)
 
-## 197 - Easy
+## 197 - Easy ✅
 
 This problem was asked by Amazon.
 
@@ -72,7 +76,7 @@ Given an array and a number `k` that's smaller than the length of the array, rot
 
 [Solution](197-easy/answer.c)
 
-## 202 - Easy
+## 202 - Easy ✅
 
 This problem was asked by Palantir.
 
@@ -80,7 +84,7 @@ Write a program that checks whether an integer is a palindrome. For example, `12
 
 [Solution](202-easy/answer.java)
 
-## 203 - Medium
+## 203 - Medium ✅
 
 This problem was asked by Uber.
 
