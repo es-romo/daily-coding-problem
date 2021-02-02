@@ -1,7 +1,7 @@
 /**
  * anwser
  */
-public class anwser {
+public class problem_202 {
 
     public static void main(String[] args) {
         System.out.println(palindrome(121));
