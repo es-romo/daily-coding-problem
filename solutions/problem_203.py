@@ -1,7 +1,7 @@
 import math
 
 def bSearch(arr, mi, ma):
-    guess = (mi+ma)/2
+    guess = (mi+ma)//2
     if arr[guess] <= arr[mi] & arr[guess] <= arr[ma]:
         return arr[guess]
     if ma-mi <= 1:
