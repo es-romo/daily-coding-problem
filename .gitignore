@@ -142,3 +142,10 @@ buildNumber.properties
 .mvn/wrapper/maven-wrapper.jar
 
 # End of https://www.toptal.com/developers/gitignore/api/java,maven
+
+# Bun lockfile not needed for this simple project
+bun.lockb
+
+node_modules/**
+dist/**
+.firebase/**

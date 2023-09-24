@@ -1,0 +1,9 @@
+{
+  "name": "daily-coding-problem",
+  "scripts": {
+    "build": "echo bun works!"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  }
+}
