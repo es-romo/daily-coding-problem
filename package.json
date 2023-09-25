@@ -1,9 +1,13 @@
 {
   "name": "daily-coding-problem",
   "scripts": {
+    "new": "bash new.sh",
     "build": "echo bun works!"
   },
   "devDependencies": {
     "bun-types": "latest"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12"
   }
 }
