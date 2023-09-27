@@ -1,6 +1,7 @@
 #!/bin/bash
 
 cd "$(dirname "$0")"
+cd ..
 
 if [ ! -z "$1" ]; then
     dayNumber=$1

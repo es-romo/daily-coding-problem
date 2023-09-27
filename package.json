@@ -1,9 +1,8 @@
 {
   "name": "daily-coding-problem",
   "scripts": {
-    "new": "bash new.sh",
-    "complete": "bash complete.sh",
-    "build": "echo bun works!"
+    "new": "bash scripts/new.sh",
+    "complete": "bash scripts/complete.sh"
   },
   "devDependencies": {
     "bun-types": "latest"

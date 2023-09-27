@@ -5,6 +5,7 @@ languages=("Javascript" "Typescript" "Python")
 declare -A extensions_map=(["Javascript"]="js" ["Typescript"]="ts" ["Python"]="py")
 
 cd "$(dirname "$0")"
+cd ..
 
 read -p $'\e[36mEnter the day number: \e[0m' dayNumber
 
