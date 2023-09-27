@@ -1,8 +1,8 @@
 #!/bin/sh
 
 difficulties=("Easy" "Medium" "Hard")
-languages=("Javascript" "Typescript" "Python")
-declare -A extensions_map=(["Javascript"]="js" ["Typescript"]="ts" ["Python"]="py")
+languages=("Javascript" "Typescript" "Python" "C" "Java")
+declare -A extensions_map=(["Javascript"]="js" ["Typescript"]="ts" ["Python"]="py" ["C"]="c" ["Java"]="java")
 
 cd "$(dirname "$0")"
 cd ..
