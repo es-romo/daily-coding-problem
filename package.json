@@ -2,6 +2,7 @@
   "name": "daily-coding-problem",
   "scripts": {
     "new": "bash new.sh",
+    "complete": "bash complete.sh",
     "build": "echo bun works!"
   },
   "devDependencies": {
