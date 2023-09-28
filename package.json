@@ -2,7 +2,8 @@
   "name": "daily-coding-problem",
   "scripts": {
     "new": "bash scripts/new.sh",
-    "complete": "bash scripts/complete.sh"
+    "complete": "bash scripts/complete.sh",
+    "build": "rm -rf dist && mkdir dist && bun scripts/build.js"
   },
   "devDependencies": {
     "bun-types": "latest"
