@@ -34,8 +34,8 @@ done
 
 mkdir -p problems/$dayNumber
 touch "problems/$dayNumber/solution.${extensions_map[$language]}"
-touch problems/$dayNumber/README.md
+touch problems/$dayNumber/problem.md
 echo -e "difficulty=${difficulty}\nstatus=Incomplete" > problems/$dayNumber/.info
-vim problems/$dayNumber/README.md
+vim problems/$dayNumber/problem.md
 
 echo -e $'\e[0;32mDone!'
